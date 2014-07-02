@@ -19,7 +19,9 @@
 $color-naranja: #FF5522;
 $color-blanco: #FFF;
 $color-melon: #ffceb2;
+$color-negro: #525252;
 $font-open-sans: 'Open Sans', sans-serif;
+$font-vim: 'VimSMOblique', sans-serif;
 
 @font-face {
   font-family: 'VimSMOblique';
@@ -100,6 +102,43 @@ html, body {
 
 p {
   margin: 0 !important;
+}
+
+form {
+  input[type="text"] {
+    background: #eee !important;
+    border: none;
+    border-bottom: 4px solid #ccc;
+    color: $color-naranja;
+    font-family: $font-open-sans;
+    font-size: 1.1em;
+    font-weight: 300;
+    height: 50px;
+    box-shadow: none;
+    &:focus {
+      background: #eee;
+      box-shadow: none;
+      border-bottom: 4px solid #FF8762;
+    }
+  }
+
+  button {
+    background: $color-naranja;
+    color: #fff;
+    font-family: $font-vim;
+    font-size: 1rem;
+    padding: 0.5em 2em;
+    border-bottom: 4px solid #B96500;
+    letter-spacing: 1px;
+    height: 50px;
+    transition: 0.3s ease background;
+    -webkit-transition: 0.3s ease background;
+    -moz-transition: 0.3s ease background;
+    -ms-transition: 0.3s ease background;
+    &:hover, &:active, &:focus {
+      background: #F17228;
+    }
+  }
 }
 
 /*------------------------------------------------------*/
@@ -226,15 +265,10 @@ footer {
         font-weight: 300;
       }
     }
-    input[type="text"] {
-      background: #eee;
-      border: none;
-      border-bottom: 4px solid #ccc;
+
+    ::-webkit-input-placeholder, :-moz-placeholder, ::-moz-placeholder, :-ms-input-placeholder {
+      font-family: $font-open-sans;
       color: $color-naranja;
-      font-size: 1.1em;
-      font-weight: 300;
-      height: 50px;
-      box-shadow: none;
     }
 
     button[type="submit"] {
@@ -356,6 +390,47 @@ footer {
 
   h3 {
     font-family: $font-open-sans;
+    font-size: 2rem;
+    color: $color-negro;
+    font-weight: 600;
+
+    span {
+      color: $color-naranja;
+    }
+  }
+
+  h4 {
+    font-family: $font-open-sans;
+    font-size: 1.5rem;
+    color: $color-negro;
+    font-weight: 600;
+  }
+
+  .toggle-switch {
+    a {
+      font-family: $font-open-sans;
+      font-weight: 600;
+      background: none;
+      border: 3px solid $color-naranja;
+      color: $color-naranja;
+      padding-bottom: .8rem;
+      padding-top: .8rem;
+      &:first-child {
+        // left
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+      }
+
+      &:last-child {
+        // right
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+      }
+    }
+    a.active {
+      background: $color-naranja;
+      color: $color-blanco;
+    }
   }
 }
 
@@ -540,7 +615,7 @@ footer {
   padding: 0;
 }
 
-#contact-form input {
+/* #contact-form input {
   &[type="text"], &[type="email"] {
     background: #eee;
     border: none;
@@ -551,9 +626,10 @@ footer {
     height: 50px;
     box-shadow: none;
   }
-}
+} */
 
 ::-webkit-input-placeholder, :-moz-placeholder, ::-moz-placeholder, :-ms-input-placeholder {
+  font-family: $font-open-sans;
   color: #FF9254;
 }
 

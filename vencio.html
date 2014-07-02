@@ -3,7 +3,7 @@
     <meta charset="UTF-8">
     <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no' />
     <title>SOAT La Positiva</title>
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/app.css" />
     <link rel="stylesheet" href="css/custom.css" />
 </head>
@@ -16,20 +16,20 @@
             </div>
         </div>
         <div class="row">
-            <div class="large-5 large-centered columns text-center car-data">
-                <p><span>MARCA:</span> JEEP</p>
-                <p><span>MODELO:</span> GRAND CHEROKEE LIMITED V8</p>
-                <p><span>ASIENTOS:</span> 5</p>
-                <p><span>CLASE:</span> CAMIONETA</p>
-                <p><span>No DE SERIE:</span> Loremipsumdolorsitamet</p>
+            <div class="large-4 large-centered columns text-center car-data">
+                <p><span>PLACA:</span> T2K-254</p>
+                <p><span>CLASE:</span> AUTOMOVIL</p>
+                <p><span>USO:</span> PARTICULAR</p>
+                <p><span>ESTADO:</span> ACTIVO</p>
+                <!-- <p><span>No DE SERIE:</span> Loremipsumdolorsitamet</p> -->
             </div>
         </div>
 
-        <div class="row">
+        <!-- <div class="row">
             <div class="large-12 columns text-center">
                 <p class="outdate">Tu SOAT se vence en <span>10 días</span></p>
             </div>
-        </div>
+        </div> -->
 
         <div class="row">
             <div class="large-3 large-centered columns">
@@ -46,15 +46,40 @@
 
     <section id="third-section">
         <div class="row">
-            <div class="large-10 large-centered medium-10 medium-uncentered small-10 small-centered columns">
-                <form id="contact-form" method="POST" action="/?/content/gracias" data-abide>
+            <div class="large-10 large-centered medium-10 medium centered small-10 small-centered columns text-center">
+                <h3>COMPRA TU SOAT POR <span>S/. 99</span></h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="large-10 large-centered medium-10 medium-uncentered small-10 small-centered columns text-center">
+                <h4>LLENA ESTE FORMULARIO PARA CONTACTARNOS CONTIGO</h4>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="large-10 large-centered medium-10 medium-uncentered small-10 small-centered columns text-center">
+                <form method="POST" action="/?/content/gracias" data-abide>
                     <input type="hidden" name="XID" value="{XID_HASH}" /> 
                     <div class="row">
-                        <div class="large-6 columns">
+                        <div class="large-7 large-centered columns">
                             <div class="row">
                                 <div class="large-12 columns">
                                     <label class="ie9label" for="name">Nombre</label>
                                     <input type="text" name="name" placeholder="Nombre" required pattern="[a-zA-Z]+">
+                                    <small class="error">Debe ingresar su nombre.</small>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="large-12 columns">
+                                    <label class="ie9label" for="name">Email</label>
+                                    <input type="text" name="name" placeholder="Email" required pattern="[a-zA-Z]+">
+                                    <small class="error">Debe ingresar su nombre.</small>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="large-12 columns">
+                                    <label class="ie9label" for="name">Teléfono</label>
+                                    <input type="text" name="name" placeholder="Teléfono" required pattern="[a-zA-Z]+">
                                     <small class="error">Debe ingresar su nombre.</small>
                                 </div>
                             </div>
@@ -65,55 +90,14 @@
                                     <small class="error">Debe ingresar su nombre.</small>
                                 </div>
                             </div>
+
                             <div class="row">
-                                <div class="large-12 columns">
-                                    <label class="ie9label" for="name">Nombre</label>
-                                    <input type="text" name="name" placeholder="Nombre" required pattern="[a-zA-Z]+">
-                                    <small class="error">Debe ingresar su nombre.</small>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="large-12 columns">
-                                    <label class="ie9label" for="name">Nombre</label>
-                                    <input type="text" name="name" placeholder="Nombre" required pattern="[a-zA-Z]+">
-                                    <small class="error">Debe ingresar su nombre.</small>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="large-6 columns">
-                            <div class="row">
-                                <div class="large-12 columns">
-                                    <label class="ie9label" for="name">Nombre</label>
-                                    <input type="text" name="name" placeholder="Nombre" required pattern="[a-zA-Z]+">
-                                    <small class="error">Debe ingresar su nombre.</small>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="large-12 columns">
-                                    <label class="ie9label" for="name">Nombre</label>
-                                    <input type="text" name="name" placeholder="Nombre" required pattern="[a-zA-Z]+">
-                                    <small class="error">Debe ingresar su nombre.</small>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="large-12 columns">
-                                    <label class="ie9label" for="name">Nombre</label>
-                                    <input type="text" name="name" placeholder="Nombre" required pattern="[a-zA-Z]+">
-                                    <small class="error">Debe ingresar su nombre.</small>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="large-12 columns">
-                                    <label class="ie9label" for="name">Nombre</label>
-                                    <input type="text" name="name" placeholder="Nombre" required pattern="[a-zA-Z]+">
-                                    <small class="error">Debe ingresar su nombre.</small>
+                                <div class="large-6 large-centered columns">
+                                    <button type="submit" class="expand">ENVIAR</button>
                                 </div>
                             </div>
                         </div>
                     </div>
-
-
                </form>
             </div>
         </div>
