@@ -21,7 +21,7 @@ $color-blanco: #FFF;
 $color-melon: #ffceb2;
 $color-negro: #525252;
 $font-open-sans: 'Open Sans', sans-serif;
-$font-vim: 'VimSMOblique', sans-serif;
+$font-vim: 'VimSM', sans-serif;
 
 @font-face {
   font-family: 'VimSMOblique';
@@ -122,6 +122,27 @@ form {
     }
   }
 
+  input[type="checkbox"] {
+    display: none;
+    + label {
+      color: #525252;
+      margin: 0;
+      line-height: 43px;
+      span {
+        display: inline-block;
+        width: 30px;
+        height: 40px;
+        margin: 1em auto;
+        vertical-align: middle;
+        background: url(../img/checkbox2.png) left top no-repeat;
+        cursor: pointer;
+      }
+    }
+    &:checked + label span {
+      background: url(../img/checkbox2.png) -30px top no-repeat;
+    }
+  }
+
   button {
     background: $color-naranja;
     color: #fff;
@@ -138,6 +159,12 @@ form {
     &:hover, &:active, &:focus {
       background: #F17228;
     }
+  }
+
+  small.error {
+    background: none !important;
+    color: #ff5522 !important;
+    text-align: left;
   }
 }
 
@@ -411,18 +438,29 @@ footer {
       font-family: $font-open-sans;
       font-weight: 600;
       background: none;
-      border: 3px solid $color-naranja;
       color: $color-naranja;
       padding-bottom: .8rem;
       padding-top: .8rem;
+      width: 20rem;
+      transition: .2s all linear;
       &:first-child {
         // left
+        border-top: 3px;
+        border-bottom: 3px;
+        border-left: 3px;
+        border-style: solid;
+        border-color: $color-naranja;
         border-top-left-radius: 5px;
         border-bottom-left-radius: 5px;
       }
 
       &:last-child {
         // right
+        border-top: 3px;
+        border-bottom: 3px;
+        border-right: 3px;
+        border-style: solid;
+        border-color: $color-naranja;
         border-top-right-radius: 5px;
         border-bottom-right-radius: 5px;
       }
@@ -431,6 +469,10 @@ footer {
       background: $color-naranja;
       color: $color-blanco;
     }
+  }
+
+  #form-reminder {
+    display: none;
   }
 }
 

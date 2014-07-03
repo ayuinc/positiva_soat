@@ -31,11 +31,11 @@
             </div>
         </div> -->
 
-        <div class="row">
+        <!-- <div class="row">
             <div class="large-3 large-centered columns">
                 <a href="#" class="button button-expand">RENOVAR AHORA</a>
             </div>
-        </div>
+        </div> -->
 
         <div class="row">
             <div class="large-5 large-centered columns text-center">
@@ -47,19 +47,118 @@
     <section id="third-section">
         <div class="row">
             <div class="large-10 large-centered medium-10 medium-uncentered small-10 small-centered columns text-center">
-                <h3>¿CUAL ES TU ZONA DE CIRCULACIÓN?</h3>
+                <h3>ELIGE LA OPCIÓN DE TU PREFERENCIA</h3>
             </div>
         </div>
 
         <div class="row">
-            <div class="large-6 large-centered medium-8 medium-centered small-8 small-centered columns text-center">
+            <div class="large-10 large-centered medium-8 medium-centered small-8 small-centered columns text-center">
+
                 <div class="toggle-switch">
-                    <a class="button button-expand active" href="#">OPTION A</a><a class="button button-expand" href="#">OPTION B</a>
+                    <a class="button button-expand active" href="#" data-form-id="form-buy">QUIERO RENOVAR A PARTIR DE LA FECHA DE VENCIMIENTO</a><a class="button button-expand" href="#" data-form-id="form-reminder">QUIERO QUE ME ENVIEN UN RECORDATORIO</a>
                 </div>
             </div>
         </div>
 
-        <div class="row">
+        <div class="row" id="form-buy">
+            <div class="large-10 large-centered medium-10 medium-uncentered small-10 small-centered columns text-center">
+                <form method="POST" action="/?/content/gracias" data-abide>
+                    <input type="hidden" name="XID" value="{XID_HASH}" /> 
+                    <div class="row">
+                        <div class="large-7 large-centered columns">
+                            <div class="row">
+                                <div class="large-12 columns">
+                                    <label class="ie9label" for="name">Nombre</label>
+                                    <input type="text" name="name" placeholder="Nombre" required pattern="[a-zA-Z]+">
+                                    <small class="error">Debe ingresar su nombre.</small>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="large-12 columns">
+                                    <label class="ie9label" for="name">Email</label>
+                                    <input type="text" name="name" placeholder="Email" required pattern="[a-zA-Z]+">
+                                    <small class="error">Debe ingresar su email.</small>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="large-12 columns">
+                                    <label class="ie9label" for="name">Teléfono</label>
+                                    <input type="text" name="name" placeholder="Teléfono" required pattern="[a-zA-Z]+">
+                                    <small class="error">Debe ingresar su teléfono.</small>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="large-12 columns">
+                                    <label class="ie9label" for="name">Nombre</label>
+                                    <input type="text" name="name" placeholder="Nombre" required pattern="[a-zA-Z]+">
+                                    <small class="error">Debe ingresar su DNI.</small>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="large-12 columns">
+                                    <input id="c1" type="checkbox" value="15"><label for="c1"><span></span>&nbsp;&nbsp;Lorem ipsum dolor sit amet, consectetur adipisicing elit.</label>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="large-6 large-centered columns">
+                                    <button type="submit" class="expand">ENVIAR</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+               </form>
+            </div>
+        </div>
+
+        <div class="row" id="form-reminder">
+            <div class="large-10 large-centered medium-10 medium-uncentered small-10 small-centered columns text-center">
+                <form method="POST" action="/?/content/gracias" data-abide>
+                    <input type="hidden" name="XID" value="{XID_HASH}" /> 
+                    <div class="row">
+                        <div class="large-7 large-centered columns">
+                            <div class="row">
+                                <div class="large-12 columns">
+                                    <label class="ie9label" for="name">Nombre</label>
+                                    <input type="text" name="name" placeholder="Nombre" required pattern="[a-zA-Z]+">
+                                    <small class="error">Debe ingresar su nombre.</small>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="large-12 columns">
+                                    <label class="ie9label" for="name">Email</label>
+                                    <input type="text" name="name" placeholder="Email" required pattern="[a-zA-Z]+">
+                                    <small class="error">Debe ingresar su email.</small>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="large-12 columns">
+                                    <label class="ie9label" for="name">Teléfono</label>
+                                    <input type="text" name="name" placeholder="Teléfono" required pattern="[a-zA-Z]+">
+                                    <small class="error">Debe ingresar su teléfono.</small>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="large-12 columns">
+                                    <label class="ie9label" for="name">DNI</label>
+                                    <input type="text" name="name" placeholder="Nombre" required pattern="[a-zA-Z]+">
+                                    <small class="error">Debe ingresar su DNI.</small>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="large-8 large-centered columns">
+                                    <button type="submit" class="expand">RECIBIR NOTIFICACION</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+               </form>
+            </div>
+        </div>
+
+        <!-- <div class="row">
             <div class="large-4 large-centered medium-10 medium-uncentered small-10 small-centered columns text-center">
                 <form class="info-form" action="#">
                     <span class="selector">
@@ -70,81 +169,7 @@
                     </span>
                 </form>
             </div>
-        </div>
-		
-		
-        <div class="row">
-            <div class="large-10 large-centered medium-10 medium-uncentered small-10 small-centered columns">
-                <form id="contact-form" method="POST" action="/?/content/gracias" data-abide>
-                    <input type="hidden" name="XID" value="{XID_HASH}" /> 
-                    <div class="row">
-                        <div class="large-6 columns">
-                            <div class="row">
-                                <div class="large-12 columns">
-                                    <label class="ie9label" for="name">Nombre</label>
-                                    <input type="text" name="name" placeholder="Nombre" required pattern="[a-zA-Z]+">
-                                    <small class="error">Debe ingresar su nombre.</small>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="large-12 columns">
-                                    <label class="ie9label" for="name">Nombre</label>
-                                    <input type="text" name="name" placeholder="Nombre" required pattern="[a-zA-Z]+">
-                                    <small class="error">Debe ingresar su nombre.</small>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="large-12 columns">
-                                    <label class="ie9label" for="name">Nombre</label>
-                                    <input type="text" name="name" placeholder="Nombre" required pattern="[a-zA-Z]+">
-                                    <small class="error">Debe ingresar su nombre.</small>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="large-12 columns">
-                                    <label class="ie9label" for="name">Nombre</label>
-                                    <input type="text" name="name" placeholder="Nombre" required pattern="[a-zA-Z]+">
-                                    <small class="error">Debe ingresar su nombre.</small>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="large-6 columns">
-                            <div class="row">
-                                <div class="large-12 columns">
-                                    <label class="ie9label" for="name">Nombre</label>
-                                    <input type="text" name="name" placeholder="Nombre" required pattern="[a-zA-Z]+">
-                                    <small class="error">Debe ingresar su nombre.</small>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="large-12 columns">
-                                    <label class="ie9label" for="name">Nombre</label>
-                                    <input type="text" name="name" placeholder="Nombre" required pattern="[a-zA-Z]+">
-                                    <small class="error">Debe ingresar su nombre.</small>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="large-12 columns">
-                                    <label class="ie9label" for="name">Nombre</label>
-                                    <input type="text" name="name" placeholder="Nombre" required pattern="[a-zA-Z]+">
-                                    <small class="error">Debe ingresar su nombre.</small>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="large-12 columns">
-                                    <label class="ie9label" for="name">Nombre</label>
-                                    <input type="text" name="name" placeholder="Nombre" required pattern="[a-zA-Z]+">
-                                    <small class="error">Debe ingresar su nombre.</small>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-
-               </form>
-            </div>
-        </div>
+        </div> -->
     </section>
 
     <footer class="naranja">
@@ -175,6 +200,22 @@
             </div>
         </div>
     </footer>
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/foundation/js/foundation.min.js"></script>
     <script src="js/app.js"></script>
+    <script>
+        $(function() {
+            $(".toggle-switch>a").click(function(e){
+                e.preventDefault();
+                $this = $(this);
+                if(!$this.hasClass("active")) {
+                    $this.toggleClass("active");
+                    $this.siblings().toggleClass("active");
+                    $("#" + $this.attr("data-form-id")).fadeToggle(300);
+                    $("#" + $this.siblings().attr("data-form-id")).fadeToggle(300);
+                }
+            });
+        });
+    </script>
 </body>
 </html>
