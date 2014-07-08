@@ -18,7 +18,8 @@ module.exports = function(grunt) {
         },
         files: {
           'css/app.css': 'scss/app.scss',
-          'css/custom.css' : 'scss/custom.scss'
+          'css/custom.css' : 'scss/custom.scss',
+          'css/soat.css' : 'scss/soat.scss'
         }        
       }
     },
