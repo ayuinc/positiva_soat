@@ -1,11 +1,13 @@
 $color-azul: #083A78;
-// $color-naranja: #FF5522;
-$color-naranja: #F37133;
-$color-blanco: #FFF;
+// $color-orange: #FF5522;
+$color-orange: #F37133;
+$color-white: #FFF;
 $color-melon: #ffceb2;
-$color-negro: #525252;
+$color-black: #525252;
+$color-gray: #888A8C;
 $font-open-sans: 'Open Sans', sans-serif;
 $font-vim: 'VimSM', sans-serif;
+$font-nimbus: 'nimbus-sans-condensed', sans-serif;
 
 @font-face {
   font-family: 'VimSMOblique';
@@ -23,7 +25,6 @@ $font-vim: 'VimSM', sans-serif;
   font-weight: normal;
   font-style: normal;
 }
-
 
 @font-face {
   font-family: 'fb-tw';
@@ -63,15 +64,15 @@ $font-vim: 'VimSM', sans-serif;
 }
 
 .icon-twitter, .icon-facebook {
-  color: $color-naranja;
+  color: $color-orange;
   font-size: 1.5em;
-  line-height: 43px;
+  line-height: 60px;
 }
 
 .icon-twitter-blanco, .icon-facebook-blanco {
   color: #FFFFFF;
   font-size: 1.5em;
-  line-height: 43px;
+  line-height: 60px;
 }
 
 html, body {
@@ -83,11 +84,24 @@ p {
   margin: 0 !important;
 }
 
+.orange {
+	color: $color-orange;
+}
+
+.gray {
+	color: $color-gray;
+}
+
 .row {
 	max-width: 100% !important;
 }
 
-#left-section {
+.left-section {
+	height: 100%;
+	padding: 2rem 0;
+}
+
+#home {
 	background-image: -webkit-gradient(
 		linear,
 		left bottom,
@@ -100,15 +114,13 @@ p {
 	background-image: -webkit-linear-gradient(top, #949494 0%, #F7F7F7 30%);
 	background-image: -ms-linear-gradient(top, #949494 0%, #F7F7F7 30%);
 	background-image: linear-gradient(to top, #949494 0%, #F7F7F7 30%);
-	height: 100%;
-	padding: 2rem 0;
 
 	p {
 		font-family: $font-vim;
 		line-height: 1.2;
 	}
 	.orange {
-		color: $color-naranja;
+		color: $color-orange;
 		font-size: 2.5rem;
 	}
 
@@ -124,20 +136,6 @@ p {
 	.car {
 		width: 92%;
 	}
-
-	#footer {
-		a {
-			color: $color-blanco;
-			line-height: 43px;
-			font-size: 1rem;
-			font-family: $font-open-sans;
-			text-transform: uppercase;
-			font-weight: 700;
-			span {
-				font-size: 2em;
-			}
-		}
-	}
 }
 
 #right-section {
@@ -148,6 +146,8 @@ p {
 	-webkit-box-shadow: -1px 0px 20px 0px rgba(50, 50, 50, 0.75);
 	-moz-box-shadow:    -1px 0px 20px 0px rgba(50, 50, 50, 0.75);
 	box-shadow:         -1px 0px 20px 0px rgba(50, 50, 50, 0.75);
+	position: fixed;
+	right: 0;
 
 	.button {
 		background-image: -webkit-gradient(
@@ -163,13 +163,15 @@ p {
 		background-image: -ms-linear-gradient(top, #B8B8B8 0%, #F5F5F5 30%);
 		background-image: linear-gradient(to top, #B8B8B8 0%, #F5F5F5 30%);
 
-		color: $color-naranja;
-		font-family: $font-open-sans;
-		font-size: 1.2rem;
+		color: $color-orange;
+		font-family: $font-nimbus;
+		font-size: 2rem;
 		font-weight: 700;
 		border-radius: 8px;
 		border: 1px solid #E3E3E3;
 		margin-bottom: 4rem;
+		padding-top: 0.5rem;
+		padding-bottom: 0.5rem;
 	}
 
 	.row {
@@ -180,15 +182,15 @@ p {
 		list-style: url("../img/right-arrow.png");
 		li {
 			a {
-				color: $color-blanco;
-				font-family: $font-open-sans;
-				font-size: 1.2rem;
+				color: $color-white;
+				font-family: $font-nimbus;
+				font-size: 1.5rem;
 				font-weight: 700;
 			}
 			padding-bottom: 1rem;
 		}
 
-		margin-bottom: 13rem;
+		margin-bottom: 10rem;
 	}
 
 	.overlay {
@@ -197,5 +199,56 @@ p {
 		top: 0;
 		left: 0;
 		width: 100%;
+	}
+}
+
+#formas-participar {
+	h2 {
+		font-family: $font-vim;
+		font-size: 2rem;
+	}
+
+	p {
+		font-family: $font-nimbus;
+		font-size: 1.2rem;
+	}
+
+	h3 {
+		font-family: $font-nimbus;
+		font-weight: 700;
+		font-size: 2rem;
+		border-bottom: 1px solid $color-orange;
+	}
+
+	.label-gray {
+		line-height: 56px;
+		display: inline-block;
+		font-size: 1.2rem;
+	}
+
+	img {
+		height: 52px;
+	}
+
+	#head {
+		margin-bottom: 3rem;
+	}
+}
+
+#footer {
+	position: fixed;
+	bottom: 1rem;
+	left: 0;
+	width: 100%;
+	a {
+		color: $color-white;
+		line-height: 60px;
+		font-size: 1.2rem;
+		font-family: $font-nimbus;
+		text-transform: uppercase;
+		font-weight: 700;
+		span {
+			font-size: 1.5rem;
+		}
 	}
 }

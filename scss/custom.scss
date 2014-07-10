@@ -310,12 +310,6 @@ footer {
       margin-bottom: 16px;
     }
   }
-
-  .submit-button {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-  }
 }
 
 .full-width {
@@ -1078,19 +1072,6 @@ input[type=radio]:checked + .radio-label:before {
 
 /*Medium screens*/
 @media only screen and (min-width: 40.063em) {
-  #primary {
-    font-size: 3.5em;
-    line-height: 1;
-  }
-  #price-msg p {
-    font-size: 1.6em;
-  }
-  .price-first {
-    font-size: 2em;
-  }
-  .price-quantity {
-    font-size: 3.6em;
-  }
   footer {
     height: 10%;
     ul {
@@ -1102,42 +1083,7 @@ input[type=radio]:checked + .radio-label:before {
       }
     }
   }
-  .quote-fixed {
-    button[type="submit"], .button {
-      font-size: 0.85em !important;
-    }
-  }
-  #contact {
-    padding-left: 0.9375rem;
-    padding-right: 0.9375rem;
-  }
-  #locate {
-    float: right !important;
-    margin: 0 0.9375rem;
-  }
-  #fifth-section {
-    min-height: 90%;
-    h1 {
-      font-size: 3em;
-    }
-  }
-  .thanks-msg {
-    font-size: 1.8em;
-  }
-  .thanks-email {
-    font-size: 1.6em;
-  }
-  .thanks-2nd-msg {
-    font-size: 1.4em;
-  }
-  .info-bottom a {
-    font-size: 0.8em;
-  }
-  .volver-cotizar {
-    background-color: #F7F7F7;
-    display: block;
-    margin-bottom: 3rem;
-  }
+
 }
 
 /*Large screens*/
@@ -1147,6 +1093,12 @@ input[type=radio]:checked + .radio-label:before {
     #primary {
       font-size: 4.5em;
       margin-bottom: 4rem;
+    }
+
+    .submit-button {
+      position: absolute;
+      right: 0;
+      bottom: 0;
     }
   }
   
@@ -1175,43 +1127,7 @@ input[type=radio]:checked + .radio-label:before {
       opacity: 0.6;
     }
   }
-  .info-bottom {
-    min-height: 12%;
-    line-height: 1;
-  }
-  .info-price {
-    font-size: 3.5em;
-    line-height: 1;
-  }
-  .info-description {
-    line-height: 1;
-    margin-bottom: 1.5em !important;
-  }
-  .total-left, .total-right {
-    padding: 1.5em;
-  }
-  .total-left p:last-child {
-    font-size: 3.5em;
-    line-height: 1.05;
-  }
-  .total-right p {
-    font-size: 1em;
-  }
-  .locate {
-    font-size: 1.3em;
-    margin-bottom: 0.5em !important;
-  }
-  .quote {
-    select {
-      height: 50px;
-      font-size: 1.1em;
-    }
-    button[type="submit"] {
-      height: 50px;
-      font-size: 1.5em;
-      line-height: 0.5;
-    }
-  }
+
   .checkbox-form input[type="checkbox"] {
     display: none;
     + label {
