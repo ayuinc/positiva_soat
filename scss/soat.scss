@@ -280,7 +280,9 @@ p {
         line-height: 1.2;
         height: 180px;
         padding: 3rem 0;
-        font-size: 1.20rem;
+        width: 10rem;
+        margin: 0 auto !important;
+        font-size: 1.2rem;
         font-weight: 700;
     }
 
@@ -352,5 +354,46 @@ p {
         span {
             font-size: 1.5rem;
         }
+    }
+}
+
+#buy {
+    padding: 3rem;
+
+    h2 {
+        font-family: $font-nimbus;
+        font-size: 1.8rem;
+        margin-bottom: 0.5rem;
+        font-weight: 700;
+    }
+
+    .close-reveal-modal {
+        color: $color-orange;
+    }
+
+    form {
+      input[type="text"] {
+        background: #eee !important;
+        border: none;
+        border-bottom: 4px solid #ccc;
+        color: $color-orange;
+        font-family: $font-nimbus;
+        font-size: 1.1em;
+        font-weight: 300;
+        height: 50px;
+        box-shadow: none;
+        &:focus {
+          background: #eee;
+          box-shadow: none;
+          border-bottom: 4px solid #FF8762;
+        }
+      }
+
+      .button {
+        font-family: $font-nimbus;
+        height: 50px !important;
+        border-bottom: 4px solid #e73200;
+        margin-bottom: 0;
+      }
     }
 }
