@@ -98,7 +98,7 @@ p {
 }
 
 .left-section {
-    height: 100%;
+    min-height: 100%;
     padding: 2rem 0;
 }
 
@@ -140,16 +140,17 @@ p {
 }
 
 #right-section {
-    background: url("../img/fondo.png");
+    // background: url("../img/fondo.png");
+    background: url("../img/white_carbonfiber.png") repeat;
     background-size: 100% 100%;
     height: 100%;
     padding-top: 4rem;
-    -webkit-box-shadow: -1px 0px 20px 0px rgba(50, 50, 50, 0.75);
-    -moz-box-shadow:    -1px 0px 20px 0px rgba(50, 50, 50, 0.75);
-    box-shadow:         -1px 0px 20px 0px rgba(50, 50, 50, 0.75);
+    // -webkit-box-shadow: -1px 0px 20px 0px rgba(50, 50, 50, 0.75);
+    // -moz-box-shadow:    -1px 0px 20px 0px rgba(50, 50, 50, 0.75);
+    // box-shadow:         -1px 0px 20px 0px rgba(50, 50, 50, 0.75);
     position: fixed;
     right: 0;
-
+    
     .button {
         background-image: -webkit-gradient(
             linear,
@@ -446,7 +447,6 @@ p {
     background: linear-gradient(to right,  #ebecee 64%,#c5c7c9 100%); /* W3C */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ebecee', endColorstr='#c5c7c9',GradientType=1 ); /* IE6-8 */
     box-shadow: 0px 0px 12px -4px #000;
-
     -webkit-border-radius: 5px 0px 0px 5px;
     -moz-border-radius: 5px 0px 0px 5px;
     border-radius: 5px 0px 0px 5px;
@@ -458,21 +458,20 @@ p {
         z-index: 100;
         text-overflow: inherit;
         padding: 26px 11px 25px 11px;
-        // word-wrap: break-word;
-        // color: #ffffff;
         display: block;
-
-        
         background-image: url(../img/chat-icon.png);
         background-repeat: no-repeat;
-
-
         -webkit-transform: rotate(0deg);
         -moz-transform: rotate(0deg);
         -ms-transform: rotate(0deg);
         -o-transform: rotate(0deg);
         transform: rotate(0deg);
-
         background-position: 12px 20px;
+    }
+}
+@media only screen and (min-width: 40.063em){
+    /*Pagina Gracias*/
+    #fifth-section {
+        min-height: 100% !important;
     }
 }
