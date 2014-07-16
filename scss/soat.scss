@@ -272,14 +272,14 @@ p {
     #hexagon {
         background: url("../img/hex-background.png") no-repeat;
         background-size: 60%;
-        background-position: 40%;
+        background-position: 40% 60%;
     }
 
     .hex-text {
         font-family: $font-nimbus;
         line-height: 1.2;
-        height: 180px;
-        padding: 3rem 0;
+        height: 272px;
+        padding: 6rem 0 0;
         width: 10rem;
         margin: 0 auto !important;
         font-size: 1.2rem;
@@ -356,7 +356,9 @@ p {
         }
     }
 }
-
+.reveal-modal .close-reveal-modal {
+    color: $color-orange;
+}
 #buy {
     padding: 3rem;
 
@@ -366,9 +368,14 @@ p {
         margin-bottom: 0.5rem;
         font-weight: 700;
     }
-
-    .close-reveal-modal {
-        color: $color-orange;
+    
+    p {
+        font-family: $font-nimbus;
+        font-size: 1.7rem;
+        text-align: center;
+        text-transform: uppercase;
+        margin-bottom: 1rem !important;
+        font-weight: bold;
     }
 
     form {
@@ -395,5 +402,77 @@ p {
         border-bottom: 4px solid #e73200;
         margin-bottom: 0;
       }
+    }
+}
+
+#terms{
+    font-family: $font-nimbus;
+    height: 70%;
+    overflow: scroll;
+    left: 60%;
+    width: 60%;
+
+    h4{
+        font-family: $font-nimbus;
+    }
+
+    h3{
+        font-family: $font-nimbus;
+    }
+}
+
+#contacto{
+    left: 60%;
+    width: 60%;
+
+    .close-reveal-modal {
+        font-size: 1.6rem;
+    }
+}
+
+#chat{
+    position: fixed;
+    right: 0px;
+    top: 53%;
+    display: none;
+    background: #ebecee; /* Old browsers */
+    /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMCUiPgogICAgPHN0b3Agb2Zmc2V0PSI2NCUiIHN0b3AtY29sb3I9IiNlYmVjZWUiIHN0b3Atb3BhY2l0eT0iMSIvPgogICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjYzVjN2M5IiBzdG9wLW9wYWNpdHk9IjEiLz4KICA8L2xpbmVhckdyYWRpZW50PgogIDxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9InVybCgjZ3JhZC11Y2dnLWdlbmVyYXRlZCkiIC8+Cjwvc3ZnPg==);
+    background: -moz-linear-gradient(left,  #ebecee 64%, #c5c7c9 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right top, color-stop(64%,#ebecee), color-stop(100%,#c5c7c9)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(left,  #ebecee 64%,#c5c7c9 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(left,  #ebecee 64%,#c5c7c9 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(left,  #ebecee 64%,#c5c7c9 100%); /* IE10+ */
+    background: linear-gradient(to right,  #ebecee 64%,#c5c7c9 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ebecee', endColorstr='#c5c7c9',GradientType=1 ); /* IE6-8 */
+    box-shadow: 0px 0px 12px -4px #000;
+
+    -webkit-border-radius: 5px 0px 0px 5px;
+    -moz-border-radius: 5px 0px 0px 5px;
+    border-radius: 5px 0px 0px 5px;
+    border: 1px solid #e3e3e3;
+    a{
+
+        width: 60px;
+        height: 140px;
+        z-index: 100;
+        text-overflow: inherit;
+        padding: 26px 11px 25px 11px;
+        // word-wrap: break-word;
+        // color: #ffffff;
+        display: block;
+
+        
+        background-image: url(../img/chat-icon.png);
+        background-repeat: no-repeat;
+
+
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+
+        background-position: 12px 20px;
     }
 }
