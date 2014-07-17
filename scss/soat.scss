@@ -140,14 +140,14 @@ p {
 }
 
 #right-section {
-    // background: url("../img/fondo.png");
-    background: url("../img/white_carbonfiber.png") repeat;
+    background: url("../img/fondo.png");
+    // background: url("../img/white_carbonfiber.png") repeat;
     background-size: 100% 100%;
     height: 100%;
     padding-top: 4rem;
-    // -webkit-box-shadow: -1px 0px 20px 0px rgba(50, 50, 50, 0.75);
-    // -moz-box-shadow:    -1px 0px 20px 0px rgba(50, 50, 50, 0.75);
-    // box-shadow:         -1px 0px 20px 0px rgba(50, 50, 50, 0.75);
+    -webkit-box-shadow: -1px 0px 20px 0px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow:    -1px 0px 20px 0px rgba(50, 50, 50, 0.75);
+    box-shadow:         -1px 0px 20px 0px rgba(50, 50, 50, 0.75);
     position: fixed;
     right: 0;
     
