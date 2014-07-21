@@ -569,8 +569,9 @@ ul.off-canvas-list li.social-icons a{
         .button{
             @include gradient-to-bottom;
             box-shadow: 0px 0px 12px -4px #000000;
-            border-radius: 5px 0px 0px 5px;
+            border-radius: 5px 5px 5px 5px;
             border: 1px solid #e3e3e3;
+            color: $color-blue;
         }
 
         .orange {
