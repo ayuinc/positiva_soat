@@ -26,6 +26,28 @@ $font-nimbus: 'nimbus-sans-condensed', sans-serif;
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ebecee', endColorstr='#c5c7c9',GradientType=1 ); /* IE6-8 */
 }
 @font-face {
+    font-family: 'swis721_btroman';
+    src: url('../Swiss721BT/swiss_721_bt-webfont.eot');
+    src: url('../Swiss721BT/swiss_721_bt-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../Swiss721BT/swiss_721_bt-webfont.woff') format('woff'),
+         url('../Swiss721BT/swiss_721_bt-webfont.ttf') format('truetype'),
+         url('../Swiss721BT/swiss_721_bt-webfont.svg#swis721_btroman') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Swiss721BT-Black';
+    src: url('Swiss721BT-Black.eot');
+    src: url('../fonts/Swiss721BT-Black/Swiss721BT-Black.eot?#iefix') format('embedded-opentype'),  
+         url('../fonts/Swiss721BT-Black/Swiss721BT-Black.woff') format('woff'), 
+         url('../fonts/Swiss721BT-Black/Swiss721BT-Black.ttf')  format('truetype'), 
+         url('../fonts/Swiss721BT-Black/Swiss721BT-Black.svg#Swiss721BT-Black') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
   font-family: 'VimSMOblique';
   src: url('../fonts/vimsm-oblique-webfont.eot');
   src: url('../fonts/vimsm-oblique-webfont.eot?#iefix') format("embedded-opentype"), url('../fonts/vimsm-oblique-webfont.woff') format("woff"), url('../fonts/vimsm-oblique-webfont.ttf') format("truetype"), url('../fonts/vimsm-oblique-webfont.svg#vim_smheavy-oblique') format("svg");
@@ -485,6 +507,7 @@ p {
     }
 }
 
+/*Custom off-canvas*/
 #right-mobile-nav{
     // position: fixed;
 }
@@ -514,6 +537,13 @@ ul.off-canvas-list li.social-icons a{
 
 .right-small {
     border-left: solid 1px #fff;
+}
+
+.acerca-de-mobile,
+.ganadores-mobile{
+
+    @include degraded;
+    
 }
 
 @media only screen and (max-width: 40em) {
