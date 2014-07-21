@@ -72,7 +72,7 @@ $font-nimbus: 'nimbus-sans-condensed', sans-serif;
 
 .icon-twitter-blanco, .icon-facebook-blanco {
   color: #FFFFFF;
-  font-size: 1.5em;
+  font-size: 3.5em;
   line-height: 60px;
 }
 
@@ -485,6 +485,12 @@ ul.off-canvas-list li a{
 
 ul.off-canvas-list li a:hover{
     background: #ee2e2b;
+}
+
+ul.off-canvas-list li.social-icons a{
+    float: left;
+    width: 50%;
+    text-align: center;
 }
 
 .right-small {
