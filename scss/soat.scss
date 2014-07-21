@@ -545,6 +545,10 @@ ul.off-canvas-list li.social-icons a{
     border-left: solid 1px #fff;
 }
 
+.main-section{
+    @include swiss;
+}
+
 #acerca-de-mobile,
 #ganadores-mobile{
 
