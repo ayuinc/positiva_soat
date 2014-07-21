@@ -26,7 +26,7 @@ $font-nimbus: 'nimbus-sans-condensed', sans-serif;
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ebecee', endColorstr='#c5c7c9',GradientType=1 ); /* IE6-8 */
 }
 @font-face {
-    font-family: 'swis721_btroman';
+    font-family: 'swiss';
     src: url('../Swiss721BT/swiss_721_bt-webfont.eot');
     src: url('../Swiss721BT/swiss_721_bt-webfont.eot?#iefix') format('embedded-opentype'),
          url('../Swiss721BT/swiss_721_bt-webfont.woff') format('woff'),
@@ -36,8 +36,11 @@ $font-nimbus: 'nimbus-sans-condensed', sans-serif;
     font-style: normal;
 }
 
+@mixin swiss { font-family: 'swiss' !important; font-style: normal;}
+.swiss {@include swiss;}
+
 @font-face {
-    font-family: 'Swiss721BT-Black';
+    font-family: 'swiss-black';
     src: url('Swiss721BT-Black.eot');
     src: url('../fonts/Swiss721BT-Black/Swiss721BT-Black.eot?#iefix') format('embedded-opentype'),  
          url('../fonts/Swiss721BT-Black/Swiss721BT-Black.woff') format('woff'), 
@@ -46,6 +49,9 @@ $font-nimbus: 'nimbus-sans-condensed', sans-serif;
     font-weight: normal;
     font-style: normal;
 }
+
+@mixin swiss-black { font-family: 'swiss-black' !important; font-style: normal;}
+.swiss-black {@include swiss-black;}
 
 @font-face {
   font-family: 'VimSMOblique';
