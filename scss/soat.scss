@@ -102,7 +102,8 @@ p {
     padding: 2rem 0;
 }
 
-#home {
+#home,
+#home-mobile {
     background-image: -webkit-gradient(
         linear,
         left bottom,
@@ -461,17 +462,106 @@ p {
         display: block;
         background-image: url(../img/chat-icon.png);
         background-repeat: no-repeat;
-        -webkit-transform: rotate(0deg);
-        -moz-transform: rotate(0deg);
-        -ms-transform: rotate(0deg);
-        -o-transform: rotate(0deg);
-        transform: rotate(0deg);
         background-position: 12px 20px;
     }
 }
+
+#right-mobile-nav{
+    // position: fixed;
+}
+
+.right-off-canvas-menu{
+    background: url(../img/fondo.png) no-repeat #EE2E2B;
+}
+
+.tab-bar{
+    background: #F4892B;
+}
+
+ul.off-canvas-list li a{
+    color: #fff;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.7);
+}
+
+ul.off-canvas-list li a:hover{
+    background: #ee2e2b;
+}
+
+.right-small {
+    border-left: solid 1px #fff;
+}
+
+@media only screen and (max-width: 40em) {
+    .row{
+        max-width: none !important;
+    }
+    
+    #home-mobile {
+        
+        position: relative;
+        z-index: 20;
+
+        .orange {
+            color: $color-orange;
+            font-size: 1.5rem;
+        }
+
+        .blue {
+            color: $color-azul;
+            font-size: 1.8rem;
+        }
+
+        .padding-top-bottom {
+            padding: 1rem 0;
+        }
+
+    }
+
+    #right-mobile-nav {
+
+        .small-12.columns{
+            padding: 1.5rem;
+        }
+
+    }
+
+    #terms {
+        width: inherit;
+        left: inherit;
+    }
+
+    #contacto {
+        width: 100%;
+        left: inherit;
+    }
+
+    #chat{
+        display: none !important;
+    }
+
+    #top-button {
+        position: fixed;
+        bottom: 10px;
+        padding: 20px;
+        color: #fff;
+        background: rgba(0,0,0,0.3);
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        border-radius: 50%;
+        z-index: 10;
+        right: 5px;
+    }
+
+    #top-button:active {
+        
+        background: rgba(0,0,0,1);
+
+    }
+} /* max-width 640px, mobile-only styles, use when QAing mobile issues */
+
 @media only screen and (min-width: 40.063em){
     /*Pagina Gracias*/
     #fifth-section {
         min-height: 100% !important;
     }
-}
+} /* min-width 641px, medium screens */
