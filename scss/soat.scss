@@ -1,3 +1,5 @@
+// @import "bourbon/bourbon";
+
 $color-azul: #083A78;
 // $color-orange: #FF5522;
 $color-orange: #F37133;
@@ -6,6 +8,7 @@ $color-melon: #ffceb2;
 $color-black: #525252;
 $color-gray: #888A8C;
 $color-light-gray: #E2E2E2;
+$color-blue: #919BB8;
 $font-open-sans: 'Open Sans', sans-serif;
 $font-vim: 'VimSM', sans-serif;
 $font-nimbus: 'nimbus-sans-condensed', sans-serif;
@@ -89,6 +92,10 @@ p {
     color: $color-orange;
 }
 
+.blue {
+    color: $color-blue;
+}
+
 .gray {
     color: $color-gray;
 }
@@ -104,30 +111,32 @@ p {
 
 #home,
 #home-mobile {
-    background-image: -webkit-gradient(
-        linear,
-        left bottom,
-        left top,
-        color-stop(0, #949494),
-        color-stop(0.3, #F7F7F7)
-    );
-    background-image: -o-linear-gradient(top, #949494 0%, #F7F7F7 30%);
-    background-image: -moz-linear-gradient(top, #949494 0%, #F7F7F7 30%);
-    background-image: -webkit-linear-gradient(top, #949494 0%, #F7F7F7 30%);
-    background-image: -ms-linear-gradient(top, #949494 0%, #F7F7F7 30%);
-    background-image: linear-gradient(to top, #949494 0%, #F7F7F7 30%);
+    // background-image: -webkit-gradient(
+    //     linear,
+    //     left bottom,
+    //     left top,
+    //     color-stop(0, #949494),
+    //     color-stop(0.3, #F7F7F7)
+    // );
+    // background-image: -o-linear-gradient(top, #949494 0%, #F7F7F7 30%);
+    // background-image: -moz-linear-gradient(top, #949494 0%, #F7F7F7 30%);
+    // background-image: -webkit-linear-gradient(top, #949494 0%, #F7F7F7 30%);
+    // background-image: -ms-linear-gradient(top, #949494 0%, #F7F7F7 30%);
+    // background-image: linear-gradient(to top, #949494 0%, #F7F7F7 30%);
+
+    background: #EE2E2B url("../img/fondo.png") repeat-x; 
 
     p {
         font-family: $font-vim;
         line-height: 1.2;
     }
     .orange {
-        color: $color-orange;
+        color: white;
         font-size: 2.5rem;
     }
 
     .blue {
-        color: $color-azul;
+        color: white;
         font-size: 2.8rem;
     }
 
@@ -141,7 +150,10 @@ p {
 }
 
 #right-section {
-    background: url("../img/fondo.png");
+    // background: url("../img/fondo.png");
+    background: -webkit-linear-gradient(to top, #fff, $color-light-gray,#fff); 
+    background: -moz-linear-gradient(to top, #fff, $color-light-gray,#fff); 
+    background: linear-gradient(to top, #fff, $color-light-gray, #fff);  
     // background: url("../img/white_carbonfiber.png") repeat;
     background-size: 100% 100%;
     height: 100%;
@@ -153,20 +165,24 @@ p {
     right: 0;
     
     .button {
-        background-image: -webkit-gradient(
-            linear,
-            left bottom,
-            left top,
-            color-stop(0, #B8B8B8),
-            color-stop(0.3, #F5F5F5)
-        );
-        background-image: -o-linear-gradient(top, #B8B8B8 0%, #F5F5F5 30%);
-        background-image: -moz-linear-gradient(top, #B8B8B8 0%, #F5F5F5 30%);
-        background-image: -webkit-linear-gradient(top, #B8B8B8 0%, #F5F5F5 30%);
-        background-image: -ms-linear-gradient(top, #B8B8B8 0%, #F5F5F5 30%);
-        background-image: linear-gradient(to top, #B8B8B8 0%, #F5F5F5 30%);
+        // background-image: -webkit-gradient(
+        //     linear,
+        //     left bottom,
+        //     left top,
+        //     color-stop(0, #B8B8B8),
+        //     color-stop(0.3, #F5F5F5)
+        // );
+        // background-image: -o-linear-gradient(top, #B8B8B8 0%, #F5F5F5 30%);
+        // background-image: -moz-linear-gradient(top, #B8B8B8 0%, #F5F5F5 30%);
+        // background-image: -webkit-linear-gradient(top, #B8B8B8 0%, #F5F5F5 30%);
+        // background-image: -ms-linear-gradient(top, #B8B8B8 0%, #F5F5F5 30%);
+        // background-image: linear-gradient(to top, #B8B8B8 0%, #F5F5F5 30%);
+        
+        background: -webkit-linear-gradient(to top, $color-orange, lighten($color-orange, 7%));
+        background: -moz-linear-gradient(to top, $color-orange, lighten($color-orange, 7%));
+        background: linear-gradient(to top, $color-orange, lighten($color-orange, 7%));
 
-        color: $color-orange;
+        color: white;
         font-family: $font-nimbus;
         font-size: 2rem;
         font-weight: 700;
@@ -185,7 +201,7 @@ p {
         list-style: url("../img/right-arrow.png");
         li {
             a {
-                color: $color-white;
+                color: $color-gray;
                 font-family: $font-nimbus;
                 font-size: 1.5rem;
                 font-weight: 700;
