@@ -379,13 +379,13 @@
                 <div class="large-11 large-offset-1 columns">
                     <div class="row">
                         <div class="large-5 columns">
-                            <p class="orange">AUN NO TENEMOS AL <span>PRIMER GANADOR</span></p>
-                            <p class="gray"><span>PRIMER SORTEO:</span></p>
+                            <p class="orange">AUN NO TENEMOS AL <span class="block">PRIMER GANADOR</span></p>
+                            <p class="blue"><span>PRIMER SORTEO:</span></p>
                             <p class="orange">25 de <span>AGOSTO</span> del 2014</p>
                         </div>
                         <div id="info-winners" class="large-7 columns">
                             <img class="car" src="img/white.png" alt="">
-                            <p class="orange vim">¡GANARSE UN AUTO CERO KILÓMETROS <span>NUNCA</span> HA SIDO TAN FÁCIL!</p>
+                            <p class="orange vim">¡GANARSE UN <span class="block">AUTO CERO KILÓMETROS</span> NUNCA HA SIDO <span>TAN FÁCIL!</span></p>
                         </div>
                     </div>
                 </div>
@@ -413,15 +413,15 @@ positiva en centros comerciales, a través de nuestros comercializadores o con t
                         <div class="large-9 columns">
                             <div class="row">
                                 <form id="locate-form" action="#">
-                                <div class="large-6 columns">
+                                <div class="large-5 columns">
                                     <span class="selector">
-                                           <select name="region" id="region"> <option value="REGION" selected="">DEPARTAMENTO</option><option value="Ancash">Ancash</option><option value="Arequipa">Arequipa</option><option value="Cajamarca">Cajamarca</option><option value="Lambayeque">Lambayeque</option><option value="Cusco">Cusco</option><option value="Junín">Junín</option><option value="Huánuco">Huánuco</option><option value="Ica">Ica</option><option value="Moquegua">Moquegua</option><option value="Loreto">Loreto</option><option value="Puno">Puno</option><option value="Lima">Lima</option><option value="Callao">Callao</option><option value="Piura">Piura</option><option value="Tacna">Tacna</option><option value="La-Libertad">La Libertad</option><option value="Ucayali">Ucayali</option></select>
+                                           {exp:filtros:region}
                                     </span>
                                 </div>
-                                <div class="large-6 columns">
+                                <div id="info-winners" class="large-7 columns">
                                     <span class="selector">
                                         <select name="distrito" id="distrito">
-                                           <option value="DISTRITO" selected="">CIUDAD/DISTRITO</option>
+                                           {exp:filtros:district region="@@@"}
                                         </select>
                                     </span>
                                 </div>

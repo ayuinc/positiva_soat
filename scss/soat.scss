@@ -62,7 +62,8 @@ $font-vim: 'VimSM','nimbus-sans-condensed', sans-serif;
     font-style: normal;
 }
 
-@mixin swiss-black { font-family: 'swiss-black'; font-style: normal;}
+@mixin h2-spacing { letter-spacing: -1}
+@mixin swiss-black { font-family: 'swiss-black'; font-style: normal; @include h2-spacing; }
 .swiss-black {@include swiss-black;}
 
 @font-face {
@@ -450,19 +451,28 @@ h2 {
     }
 
     p {
-        @include helveticaregular;
-        font-size: 1.5rem;
-        
-
+        @include swiss-black;
+        line-height: 1;
+        margin-bottom: 1.5rem !important;
+        font-size: 1.4rem;
+    
         span {
-            font-size: 1.8rem;
+            font-size: 1.7rem;
             font-weight: 700;
+        }
+
+        span.block {
+            display: block;
         }
     }
 
+    p.blue {
+        margin-bottom: 0 !important;
+    }
+
     p.vim {
-        font-family: $font-vim;
-        font-size: 1.5rem;
+        letter-spacing: -1px;
+        font-size: 1.6rem;
         font-weight: normal;
         span {
             font-size: 2rem;
