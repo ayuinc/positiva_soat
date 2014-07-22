@@ -267,6 +267,7 @@ h2 {
     // -webkit-box-shadow: -1px 0px 20px 0px rgba(50, 50, 50, 0.75);
     // -moz-box-shadow:    -1px 0px 20px 0px rgba(50, 50, 50, 0.75);
     // box-shadow:         -1px 0px 20px 0px rgba(50, 50, 50, 0.75);
+    box-shadow: 0 0 30px -13px #000;
     position: fixed;
     right: 0;
     
@@ -346,7 +347,7 @@ h2 {
         font-family: 'nimbus-sans-condensed',sans-serif;
         font-weight: 700;
         font-size: 1.8rem;
-        border-bottom: 2px solid $color-orange;
+        border-bottom: 1px solid $color-orange;
     }
 
     .label-gray {
@@ -404,14 +405,16 @@ h2 {
     }
 
     .hex-text {
-        font-family: 'nimbus-sans-condensed',sans-serif;
-        line-height: 1.2;
+        // font-family: 'nimbus-sans-condensed',sans-serif;
+        @include helveticaregular;
+        line-height: 1.4;
         height: 272px;
         padding: 6rem 0 0;
         width: 10rem;
         margin: 0 auto !important;
-        font-size: 1.3rem;
+        font-size: 0.93rem;
         font-weight: 700;
+        letter-spacing: normal;
     }
 
     h3 {
