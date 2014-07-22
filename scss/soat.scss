@@ -440,6 +440,8 @@ h2 {
 }
 
 #ganadores {
+    border-bottom: 1px solid $color-light-gray;
+    
     #info-winners {
         background: url("../img/separador.png") repeat-y;
         padding-left: 3rem;
