@@ -398,7 +398,7 @@ p {
     }
 
     .hex-text {
-        @include helveticaregular;
+        font-family: 'nimbus-sans-condensed',sans-serif;
         line-height: 1.2;
         height: 272px;
         padding: 6rem 0 0;
