@@ -528,8 +528,9 @@ h2 {
         }
 
         p {
+            @include helveticaregular;
             color: $color-orange;
-            font-size: 0.9rem;
+            font-size: 1rem;
         }
     }
 }
