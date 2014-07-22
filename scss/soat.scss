@@ -166,6 +166,10 @@ p {
   margin: 0 !important;
 }
 
+h2 {
+    margin-bottom: 1.5rem;
+}
+
 .white {
     color: $color-white;
 }
@@ -422,6 +426,10 @@ p {
     #info-right {
         background: url("../img/separador.png") repeat-y;
         padding-left: 3rem;
+        
+        div {
+            margin-bottom: 1rem;
+        }
     }
 }
 
