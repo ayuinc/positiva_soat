@@ -338,13 +338,14 @@ h2 {
 
     p {
         @include helveticaregular;
-        font-size: 1.5rem;
+        font-size: 1.4rem;
+        letter-spacing: -1px;
     }
 
     h3 {
-        @include helveticaregular;
+        font-family: 'nimbus-sans-condensed',sans-serif;
         font-weight: 700;
-        font-size: 2rem;
+        font-size: 1.8rem;
         border-bottom: 2px solid $color-orange;
     }
 
@@ -359,7 +360,7 @@ h2 {
     }
 
     #head {
-        margin-bottom: 3rem;
+        margin-bottom: 1.5rem;
     }
 
     #flecha {
@@ -382,7 +383,7 @@ h2 {
 
     p {
         @include helveticaregular;
-        font-size: 1.5rem;
+        font-size: 1.4rem;
         letter-spacing: -1px;
 
         span {
