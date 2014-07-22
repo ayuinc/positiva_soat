@@ -784,14 +784,19 @@ ul.off-canvas-list li.social-icons a{
     }
 } /* max-width 640px, mobile-only styles, use when QAing mobile issues */
 
-@media only screen and (min-width: 40.063em){
+@media only screen and (min-width: 40.063em) {
+
     /*Pagina Gracias*/
     #fifth-section {
         min-height: 100% !important;
     }
 
+} /* min-width 641px, medium screens */
+
+@media only screen and (min-width: 40.063em) and (max-width: 64em) { 
+
     .left-section {
         padding: 2.6rem 0.9375rem;
     }
 
-} /* min-width 641px, medium screens */
+} /* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
