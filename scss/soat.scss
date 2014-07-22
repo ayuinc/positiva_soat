@@ -3,7 +3,7 @@
 $color-azul: #083A78;
 // $color-orange: #FF5522;
 $color-orange: #F37133;
-$color-orange-light: #e09767;
+$color-orange-light: #F69864;
 $color-white: #FFF;
 $color-melon: #ffceb2;
 $color-black: #525252;
@@ -339,7 +339,7 @@ h2 {
 
     p {
         @include helveticaregular;
-        font-size: 1.4rem;
+        font-size: 1.2rem;
         letter-spacing: -1px;
     }
 
@@ -384,7 +384,7 @@ h2 {
 
     p {
         @include helveticaregular;
-        font-size: 1.4rem;
+        font-size: 1.2rem;
         letter-spacing: -1px;
 
         span {
@@ -424,7 +424,7 @@ h2 {
         border-bottom: 1px solid $color-orange;
         + p {
             @include helveticaregular;
-            font-size: 1rem;
+            font-size: 1.2rem;
             line-height: 1.3;
         }
     }
@@ -497,10 +497,16 @@ h2 {
         }
     }
 
+    p {
+        @include helveticaregular;
+        font-size: 1.2rem;
+        letter-spacing: -1px;
+    }
+
     select {
         background: transparent url("../img/down_arrow.svg") no-repeat 95% center;
-        color: $color-orange;
-        border: 1px solid $color-orange;
+        color: $color-orange-light;
+        border: 1px solid $color-orange-light;
         border-radius: 3px;
         font-size: 1.1rem;
         height: 2.5rem;
