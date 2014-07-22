@@ -411,7 +411,7 @@ p {
     h3 {
         @include swiss-black;
         font-weight: 700;
-        font-size: 1.7rem;
+        font-size: 1.4rem;
         border-bottom: 2px solid $color-orange;
         + p {
             @include helveticaregular;
