@@ -10,8 +10,7 @@ $color-gray: #888A8C;
 $color-light-gray: #E2E2E2;
 $color-blue: #919BB8;
 $font-open-sans: 'Open Sans', sans-serif;
-$font-vim: 'VimSM', sans-serif;
-$font-nimbus: 'nimbus-sans-condensed', sans-serif;
+$font-vim: 'VimSM',@include helveticaregular 'nimbus-sans-condensed', sans-serif;
 
 @mixin gradient-to-left{
     background: #ebecee; /* Old browsers */
@@ -281,7 +280,7 @@ p {
         background: linear-gradient(to top, $color-orange, lighten($color-orange, 7%));
 
         color: white;
-        font-family: $font-nimbus;
+        @include helveticaregular
         font-size: 2rem;
         font-weight: 700;
         border-radius: 8px;
@@ -301,7 +300,7 @@ p {
         li {
             a {
                 color: $color-gray;
-                font-family: $font-nimbus;
+                @include helveticaregular
                 font-size: 1.5rem;
                 font-weight: 700;
             }
@@ -329,12 +328,12 @@ p {
     }
 
     p {
-        font-family: $font-nimbus;
+        @include helveticaregular
         font-size: 1.2rem;
     }
 
     h3 {
-        font-family: $font-nimbus;
+        @include helveticaregular
         font-weight: 700;
         font-size: 2rem;
         border-bottom: 2px solid $color-orange;
@@ -383,7 +382,7 @@ p {
     }
 
     .left-text {
-        font-family: $font-nimbus;
+        @include helveticaregular
         font-weight: 700;
         padding: 1rem 0;
     }
@@ -406,12 +405,12 @@ p {
     }
 
     h3 {
-        font-family: $font-nimbus;
+        @include helveticaregular
         font-weight: 700;
         font-size: 1.7rem;
         border-bottom: 2px solid $color-orange;
         + p {
-            font-family: $font-nimbus;
+            @include helveticaregular
             font-size: 1rem;
         }
     }
@@ -435,7 +434,7 @@ p {
     }
 
     p {
-        font-family: $font-nimbus;
+        @include helveticaregular
         font-size: 1.5rem;
         
 
@@ -467,7 +466,7 @@ p {
         color: $color-white;
         line-height: 60px;
         font-size: 1.4rem;
-        font-family: $font-nimbus;
+        @include helveticaregular
         text-transform: uppercase;
         font-weight: 700;
         span {
@@ -493,7 +492,7 @@ p {
     }
     
     p {
-        font-family: $font-nimbus;
+        @include helveticaregular
         font-size: 1.7rem;
         text-align: center;
         text-transform: uppercase;
@@ -507,7 +506,7 @@ p {
         border: none;
         border-bottom: 4px solid #ccc;
         color: $color-orange;
-        font-family: $font-nimbus;
+        @include helveticaregular
         font-size: 1.1em;
         font-weight: 300;
         height: 50px;
@@ -520,7 +519,7 @@ p {
       }
 
       .button {
-        font-family: $font-nimbus;
+        @include helveticaregular
         height: 50px !important;
         border-bottom: 4px solid #e73200;
         margin-bottom: 0;
@@ -529,18 +528,18 @@ p {
 }
 
 #terms{
-    font-family: $font-nimbus;
+    @include helveticaregular
     height: 70%;
     overflow: scroll;
     left: 60%;
     width: 60%;
 
     h4{
-        font-family: $font-nimbus;
+        @include helveticaregular
     }
 
     h3{
-        font-family: $font-nimbus;
+        @include helveticaregular
     }
 }
 
