@@ -373,8 +373,9 @@ p {
     }
 
     p {
-        font-family: $font-vim;
+        @include helveticaregular;
         font-size: 1.5rem;
+        letter-spacing: -1px;
 
         span {
             font-size: 1.3rem;
@@ -394,7 +395,7 @@ p {
     }
 
     .hex-text {
-        font-family: $font-nimbus;
+        @include helveticaregular;
         line-height: 1.2;
         height: 272px;
         padding: 6rem 0 0;
