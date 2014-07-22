@@ -48,7 +48,7 @@ $font-vim: 'VimSM','nimbus-sans-condensed', sans-serif;
     font-style: normal;
 }
 
-@mixin swiss { font-family: 'swiss' !important; font-style: normal;}
+@mixin swiss { font-family: 'swiss'; font-style: normal;}
 .swiss {@include swiss;}
 
 @font-face {
@@ -62,7 +62,7 @@ $font-vim: 'VimSM','nimbus-sans-condensed', sans-serif;
     font-style: normal;
 }
 
-@mixin swiss-black { font-family: 'swiss-black' !important; font-style: normal;}
+@mixin swiss-black { font-family: 'swiss-black'; font-style: normal;}
 .swiss-black {@include swiss-black;}
 
 @font-face {
@@ -77,7 +77,7 @@ $font-vim: 'VimSM','nimbus-sans-condensed', sans-serif;
 
 }
 
-@mixin helveticaregular { font-family: 'helveticaregular' !important; font-style: normal;}
+@mixin helveticaregular { font-family: 'helveticaregular'; font-style: normal;}
 .helveticaregular {@include helveticaregular;}
 
 @font-face {
