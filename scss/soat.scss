@@ -3,6 +3,7 @@
 $color-azul: #083A78;
 // $color-orange: #FF5522;
 $color-orange: #F37133;
+$color-orange-light: #e09767;
 $color-white: #FFF;
 $color-melon: #ffceb2;
 $color-black: #525252;
@@ -10,7 +11,7 @@ $color-gray: #888A8C;
 $color-light-gray: #E2E2E2;
 $color-blue: #919BB8;
 $font-open-sans: 'Open Sans', sans-serif;
-$font-vim: 'VimSM',@include helveticaregular 'nimbus-sans-condensed', sans-serif;
+$font-vim: 'VimSM','nimbus-sans-condensed', sans-serif;
 
 @mixin gradient-to-left{
     background: #ebecee; /* Old browsers */
