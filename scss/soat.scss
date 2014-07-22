@@ -342,9 +342,9 @@ h2 {
     }
 
     h3 {
-        @include helveticaregular;
+        font-family: 'nimbus-sans-condensed',sans-serif;
         font-weight: 700;
-        font-size: 2rem;
+        font-size: 1.8rem;
         border-bottom: 2px solid $color-orange;
     }
 
