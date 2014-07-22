@@ -111,16 +111,23 @@ $font-nimbus: 'nimbus-sans-condensed', sans-serif;
   content: "\e601";
 }
 
-.icon-twitter-blanco,
-.icon-facebook-blanco {
-  background: url(../img/twitter-icon.png) no-repeat 0 10px;
-  width: 40px;
-  height: 52px;
-  display: block;
-}
+// .icon-twitter-blanco,
+// .icon-facebook-blanco {
+//   background: url(../img/twitter-icon.png) no-repeat 0 10px;
+//   width: 40px;
+//   height: 52px;
+//   display: block;
+// }
 
-.icon-facebook-blanco {
-  background: url(../img/facebook-icon.png) no-repeat 0 10px;
+// .icon-facebook-blanco {
+//   background: url(../img/facebook-icon.png) no-repeat 0 10px;
+// }
+
+.icon-twitter-blanco:before{
+    content: "\e600";
+}
+.icon-facebook-blanco:before {
+    content: "\e601";
 }
 
 .icon-twitter, .icon-facebook {
