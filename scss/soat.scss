@@ -231,7 +231,7 @@ h2 {
 }
 
 #home{
-
+    height: 100%;
     img{
         width: 21%;
         position: relative;
@@ -316,6 +316,7 @@ h2 {
 }
 
 #formas-participar {
+    height: 100%;
     border-bottom: 1px solid $color-light-gray;
     h2 {
         @include swiss-black;
@@ -356,6 +357,7 @@ h2 {
 }
 
 #acerca-de {
+    min-height: 100%;
     border-bottom: 1px solid $color-light-gray;
 
     #head, #car-timeline {
@@ -425,6 +427,7 @@ h2 {
 }
 
 #ganadores {
+    height: 100%;
     border-bottom: 1px solid $color-light-gray;
 
     #info-winners {
